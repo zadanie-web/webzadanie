@@ -2,7 +2,7 @@
 
 
 $server  = 'localhost';
-$director  = 'jaj/';
+$director  = 'zadanie/';
 $znak = '/'; // '/'
 define('BASE_URL', 'http://'.$server.$znak.$director);
 
