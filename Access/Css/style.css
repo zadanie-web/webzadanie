@@ -1,0 +1,58 @@
+.headerimage img{
+    height: 100%;
+   filter: blur(5px);
+
+}
+.headerimage{
+    height: 400px;
+    filter: brightness(50%);
+}
+
+.mycon{
+    width: 100%;
+    top: 10%;
+}
+.white{
+    color: white;
+}
+.mt-my{
+    margin-top: 7rem !important;
+
+}
+
+
+hr{
+    width: 100%;
+    background: darkgray;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.card{
+    border-radius: 3px;
+    width: 15rem;
+    height: 14rem;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.myfoot{
+    font-size: 10px;
+    color: darkgray;
+}
+
+
+.filter-green{
+    filter: invert(46%) sepia(13.1%) saturate(20%); ;
+}
+.darkgrey{
+    color: darkgray;
+}
+
+.mycall{
+    font-size: 10px;
+
+}
