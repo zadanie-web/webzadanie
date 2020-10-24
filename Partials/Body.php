@@ -5,9 +5,10 @@
     <div class="position-absolute mycon">
         <div class="container">
             <h2 class="white bold">FOTOGALÉRIA</h2>
-            <h3 class="white bold mt-my">KATEGÓRIE</h3>
+            <h3 class=" white bold mt-my">KATEGÓRIE</h3>
             <hr>
-            <div class="card-deck">
+                <div class="card-deck">
+                <?php for ($i=1;$i < 6;$i++){?>
                 <div class=" mt-4">
                     <div class="card">
                         <img class="card-img-top" src="<?= packageFille('Media/'.'p'.$i.'x.jpeg');?>" alt="Card image cap">
@@ -17,7 +18,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
+                <?php } ?>
+
         </div>
     </div>
 </div>
