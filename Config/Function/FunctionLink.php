@@ -13,9 +13,13 @@ function packageFille( $path, $base = BASE_URL.'')
 }
 
 
-
-
-// AUTO ADD CSS ALL in FOLDER
+/**
+ * @param $folder
+ * @param $dubfolder
+ * @param $pripona
+ * AUTO CONNECT IN FOLDER CSS
+ * PACKAGEFILLE
+ */
 function add_css($folder , $dubfolder, $pripona)
 {
     foreach (glob($folder.'/'.$dubfolder.'/'.$pripona ) as $filename)
@@ -25,7 +29,13 @@ function add_css($folder , $dubfolder, $pripona)
 }
 
 
-// AUTO ADD JS all in folder
+/**
+ * @param $folder
+ * @param $dubfolder
+ * @param $pripona
+ * AUTO CONNECT IN FOLDER JS
+ * PACKAGEFILLE
+ */
 function add_js($folder , $dubfolder, $pripona)
 {
     foreach (glob($folder.'/'.$dubfolder.'/'.$pripona ) as $filename)

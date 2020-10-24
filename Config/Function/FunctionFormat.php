@@ -1,19 +1,21 @@
 <?php
 
-// STRING
+/**
+ * @param $str
+ * @return string
+ */
 function plain($str)
 {
-     return htmlspecialchars($str, ENT_QUOTES);
-
+    return htmlspecialchars($str,ENT_QUOTES);
 }
 
 
 /**
- * EXTENDERS SELECT DATABASE
- * RETURN OBJECT
+ * @param $results
+ * @return object
  */
 function format($results)
 {
-    $results = array_map('trim', $results);
+    $results = array_map('trim',$results);
     return (object)$results;
 }
