@@ -58,6 +58,7 @@ function successbells(data,time){
     let colorgreen = $('.bells').css("color", "white").css('box-shadow', 'rgb(0, 255, 17) 0 0 10px 0');
     $('#bells').html(colorgreen).show('blind', 10).html(data).delay(time).fadeOut(10);
 }
+
 myform();
 function myform() {
     $("form").each(function () {
@@ -70,7 +71,8 @@ function myform() {
                 url: formHTML.action,
                 data: $(this).serialize(),
                 success: function (data) {
-                  datakategory(data)
+                  datakategory(data);
+                    successbells(data,1000)
                 }
             });
         });
