@@ -13,7 +13,6 @@
     <script src="<?= packageFille('Package/loader.js');?>"></script>
     <?php  // MY CSS AUTOCONNECT
       add_css('Access','Css','*.css');
-      add_js('Access','Js','*.js');
     ?>
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">

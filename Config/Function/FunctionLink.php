@@ -1,5 +1,11 @@
 <?php
+/**
+ * RewriteBase /
 
+ * $server  = 'zadanie';
+$director  = 'bjs.sk/';
+$znak = '.'; // '/'
+ */
 
 $server  = 'localhost';
 $director  = 'zadanie/';

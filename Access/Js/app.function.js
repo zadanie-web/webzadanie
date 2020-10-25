@@ -1,8 +1,4 @@
 $(document).ready(function () {
-    $(' .card-img-top').hover(function() {
-        let newImg = $(this).attr('src');
-        $('#bla').attr('src',newImg)
-    });
 
     $(document).on('click','.tooglestart',function () {
         let togdivcenter = $(this).attr("data-my-tog-center");
@@ -12,8 +8,6 @@ $(document).ready(function () {
         $("#" + togdivcenter).center().toggle(show, 100);
         $('#myblac').toggleClass('black');
     });
-
-
 });
 
 

@@ -1,8 +1,8 @@
 <div class="card-deck">
     <?php for ($i=1;$i < 6;$i++):?>
-        <div class=" mt-4">
+        <div class="mt-4">
             <div class="card">
-                <img class="card-img-top" src="<?= packageFille('Media/Kategory/'.'p'.$i.'x.jpeg');?>" alt="Card image cap">
+                <img id="myidimg" class="card-img-top" src="<?= packageFille('Media/Kategory/'.'p'.$i.'x.jpeg');?>" alt="Card image cap">
                 <div class="card-body">
                     <p class="text-center bold  m-0 card-title">Architektúra</p>
                     <p class="card-text mycall text-center">6 fotiek</p>
@@ -20,3 +20,10 @@
     </div>
 </div>
 <p class="myfoot mt-5">webdesign bart.sk</p>
+<script>
+    $('.card-img-top').hover(function() {
+        let newImg = $(this).attr('src');
+        $('#bla').attr('src',newImg)
+    });
+
+</script>
