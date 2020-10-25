@@ -7,6 +7,11 @@ $routes = [
        'GET' => 'Partials/Body.php',
         'POST' => 'Partials/Body.php',
     ],
+
+    '/Kategory' => [
+        'POST' => 'Actions/Ajax/Kategory.php',
+    ]
+
 ];
 
 
