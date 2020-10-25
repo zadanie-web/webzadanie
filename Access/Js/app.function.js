@@ -1,12 +1,6 @@
-$(document).ready(function () {
-    $(document).on('click','.tooglestart',function () {
-        let togdivcenter = $(this).attr("data-my-tog-center");
-        let show = $(this).attr("data-divtoogle-show");
-        $("#" + togdivcenter).center().toggle(show, 100);
-        $('#myblac').toggleClass('black');
-    });
-});
-
+/**
+ * ANIMATE BACKGROUND HOVER
+ */
 function animatehover(){
     $('.card-img-top').hover(function() {
         let newImg = $(this).attr('src');

@@ -16,6 +16,10 @@ $routes = [
 
     '/NewKat' => [
         'POST' => 'Actions/Php/InsertKategory.php'
+    ],
+
+    '/bcheader' => [
+        'POST' => 'App/HeaderImg.php',
     ]
 
 ];
