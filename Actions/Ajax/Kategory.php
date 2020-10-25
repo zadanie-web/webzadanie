@@ -8,7 +8,6 @@
                     <div class="card-body text-center">
                         <div class=" text-warning mt-4  ml-4 mr-4  mb-1 bold">Teraz pridajte fotky pre túro kategóriu</div>
                         <img src="<?= packageFille('Media/a.svg');?>" width="40" alt="ikonka add" class="filter-green">
-
                         <p class="text-center bold  m-0 card-title"><?= plain($kat->name);?></p>
                     </div>
                 </div>
