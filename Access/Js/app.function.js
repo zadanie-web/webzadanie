@@ -1,3 +1,16 @@
+$(document).ready(function () {
+    $(document).on('click','.tooglestart',function () {
+        let togdivcenter = $(this).attr("data-my-tog-center");
+        let show = $(this).attr("data-divtoogle-show");
+        let direct = $(this).attr("data-divtoogledirect");
+        let delay = $(this).attr("data-my-delay");
+        $("#" + togdivcenter).center().toggle(show, 100);
+        $('#myblac').toggleClass('black');
+
+    });
+});
+
+
 /**
  * FUNCTION CENTER
  * POSITION (absolute)
@@ -15,8 +28,6 @@
         }
     });
 })(jQuery);
-
-
 
 
 /**
