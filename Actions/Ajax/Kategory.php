@@ -1,15 +1,17 @@
 <div class="card-deck">
-    <?php for ($i=1;$i < 6;$i++):?>
+    <?php
+    $kategory = db_select_assoc('SELECT * FROM Kategory');
+    foreach($kategory as $kat):?>
         <div class="mt-4">
             <div class="card">
-                <img id="myidimg" class="card-img-top" src="<?= packageFille('Media/Kategory/'.'p'.$i.'x.jpeg');?>" alt="Card image cap">
+                <img id="myidimg" class="card-img-top" src="<?= packageFille(plain($kat->image));?>" alt="Card image cap">
                 <div class="card-body">
-                    <p class="text-center bold  m-0 card-title">Architektúra</p>
+                    <p class="text-center bold  m-0 card-title"><?= plain($kat->name);?></p>
                     <p class="card-text mycall text-center">6 fotiek</p>
                 </div>
             </div>
         </div>
-    <?php endfor; ?>
+    <?php endforeach; ?>
     <div class="mt-4">
         <div class="tooglestart card card-block" data-my-tog-center="tkategory" data-divtoogle-show="fade">
             <div class="card-body text-center mt-5">

@@ -1,4 +1,11 @@
 <?php
+
+/**
+ * @param $query
+ * @param bool $format
+ * @return array
+ * FUNCTION FORMAT (OBJECT)
+ */
 function db_select_assoc($query,$format = true){
     global $connection;
     $sql = $connection->prepare($query);
