@@ -10,7 +10,12 @@ $(document).ready(function () {
     });
 });
 
-
+function animatehover(){
+    $('.card-img-top').hover(function() {
+        let newImg = $(this).attr('src');
+        $('#bla').attr('src',newImg)
+    });
+}
 /**
  * FUNCTION CENTER
  * POSITION (absolute)

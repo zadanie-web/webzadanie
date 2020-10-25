@@ -20,10 +20,4 @@
     </div>
 </div>
 <p class="myfoot mt-5">webdesign bart.sk</p>
-<script>
-    $('.card-img-top').hover(function() {
-        let newImg = $(this).attr('src');
-        $('#bla').attr('src',newImg)
-    });
-
-</script>
+<script> animatehover(); </script>
