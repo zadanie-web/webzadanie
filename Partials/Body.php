@@ -27,8 +27,12 @@
     <div class="addkategory">
         <div class="p-4">
             <h4 class="bold">PRIDAŤ KATEGÓRIU</h4>
-            <label for="kateg"></label>
-            <input id="kateg" class="mt-4 border-0 w-75" type="text" placeholder="ZADAJTE NÁZOV KATEGÓRIE"><button type="button" class="mt-3 float-right btn btn-success bold">+ PRIDAŤ</button>
+            <form method="post" action="NewKat">
+                <label for="kateg"></label>
+                <input id="kateg" class="mt-4 border-0 w-75" name="kategoryname" type="text" placeholder="ZADAJTE NÁZOV KATEGÓRIE">
+                <button type="submit"  class="mt-3 float-right btn btn-success bold">+ PRIDAŤ</button>
+                <input type="hidden" name="Chcempridať" value="Ok">
+            </form>
             <hr>
         </div>
     </div>

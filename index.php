@@ -9,6 +9,10 @@ $routes = [
 
     '/Kategory' => [
         'POST' => 'Actions/Ajax/Kategory.php',
+    ],
+
+    '/NewKat' => [
+        'POST' => 'Actions/Php/InsertKategory.php'
     ]
 
 ];

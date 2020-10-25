@@ -26,7 +26,7 @@ function animatehover(){
         center: function () {
             return this.each(function() {
                 //let tops = $(this).attr("data-top");
-                let top = ($(window).height() - $(this).outerHeight()) / 3;
+                let top = ($(window).height() - $(this).outerHeight()) / 2;
                 let left = ($(window).width() - $(this).outerWidth()) / 2;
                 $(this).css({position:'absolute', margin:0, top: (top > 0 ? top : 0)+'px', left: (left > 0 ? left : 0)+'px'});
             });
@@ -51,4 +51,28 @@ function datakategory(){
             $('#MyKategory').html(data);
         }
     })
+}
+
+
+function successbells(data,time){
+    let colorgreen = $('.bells').css("color", "white").css('box-shadow', 'rgb(0, 255, 17) 0 0 10px 0');
+    $('#bells').html(colorgreen).show('blind', 10).html(data).delay(time).fadeOut(10);
+}
+myform();
+function myform() {
+    $("form").each(function () {
+        $(this).bind("submit", function (event) {
+            let bells = $(this).attr('data-bells')
+            event.preventDefault();
+            let formHTML = event.target;
+            $.ajax({
+                method: formHTML.method,
+                url: formHTML.action,
+                data: $(this).serialize(),
+                success: function (data) {
+                  datakategory(data)
+                }
+            });
+        });
+    });
 }
