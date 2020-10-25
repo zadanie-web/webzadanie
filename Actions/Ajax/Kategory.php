@@ -1,6 +1,6 @@
 <div class="card-deck">
     <?php
-    $kategory = db_select_assoc('SELECT * FROM Kategory');
+    $kategory = db_select_assoc(SELECTKATEGORY);
     foreach($kategory as $kat):?>
         <div class="mt-4">
             <div class="card">
