@@ -1,3 +1,8 @@
+
+
+
+datakategory();
+
 function datakategory(){
     $.ajax({
         url:'Kategory',
