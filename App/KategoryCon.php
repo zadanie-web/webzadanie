@@ -1,5 +1,5 @@
 <?php // KATEGORY KONTAINER ?>
-<div class="position-absolute mycon">
+<div id="kathed" class="position-absolute mycon">
     <div class="container">
         <h2 class="white bold">FOTOGALÉRIA</h2>
         <h3 class=" white bold mt-my">KATEGÓRIE</h3>

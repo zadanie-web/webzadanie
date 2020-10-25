@@ -11,7 +11,7 @@ $(document).on('click','.actions-btn',function () {
         data: {action: posta, pol: ids},
         dataType: datatype,
         success: function (data) {
-            $('#mykat').html(data)
+            $('#mykat').html(data);
             if (dattrue){
                 $.ajax({
                     tape:"POST",
