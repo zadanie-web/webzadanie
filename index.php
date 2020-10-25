@@ -1,6 +1,9 @@
 <?php
+// CONNECT FUNCTION && DATABASE && DEFINE
 include_once 'Config/Config.php';
 
+
+// LOW ROUTERS
 $routes = [
     '/' => [
         'GET' => 'Partials/CONNECTION.php',
@@ -18,12 +21,9 @@ $routes = [
 ];
 
 
-
-
-
-
-
+// KONTROL PAGE SEGMENT
 $page = segment(1);
+
 $method = $_SERVER['REQUEST_METHOD'];
 
 if ( ! isset( $routes["/$page"][$method]) ) {

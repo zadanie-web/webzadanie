@@ -1,10 +1,7 @@
 $(document).ready(function () {
-
     $(document).on('click','.tooglestart',function () {
         let togdivcenter = $(this).attr("data-my-tog-center");
         let show = $(this).attr("data-divtoogle-show");
-        let direct = $(this).attr("data-divtoogledirect");
-        let delay = $(this).attr("data-my-delay");
         $("#" + togdivcenter).center().toggle(show, 100);
         $('#myblac').toggleClass('black');
     });
@@ -16,10 +13,17 @@ function animatehover(){
         $('#bla').attr('src',newImg)
     });
 }
+
+/** BELL */
+function successbell(data,time){
+    let colorgreen = $('.bell-menu').css("color", "white").css('box-shadow', 'rgb(0, 255, 17) 0 0 10px 0');
+    $('#bell').html(colorgreen).show('blind', 10).html(data).delay(time).fadeOut(10);
+}
+
 /**
  * FUNCTION CENTER
  * POSITION (absolute)
- * HEIGHT , WIDTH 1/3 and 1/2
+ * HEIGHT , WIDTH 1/2 and 1/2
  */
 (function($){
     $.fn.extend({
@@ -36,9 +40,12 @@ function animatehover(){
 
 
 /**
- * Load kategory start get page
+ * Load function start get page
  */
 datakategory();
+myform();
+
+
 
 /**
  * FUNCTION FOR LOAD KATEGORY
@@ -53,12 +60,12 @@ function datakategory(){
     })
 }
 
-
-myform();
+/**
+ * My FORM
+ */
 function myform() {
     $("form").each(function () {
         $(this).bind("submit", function (event) {
-            let bells = $(this).attr('data-bells')
             event.preventDefault();
             let formHTML = event.target;
             $.ajax({
@@ -67,6 +74,7 @@ function myform() {
                 data: $(this).serialize(),
                 success: function (data) {
                   datakategory(data);
+                  successbell(data,3000)
                 }
             });
         });
