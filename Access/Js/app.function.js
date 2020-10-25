@@ -67,7 +67,6 @@ function myform() {
                 data: $(this).serialize(),
                 success: function (data) {
                   datakategory(data);
-                  successbells(data,1000)
                 }
             });
         });
