@@ -12,11 +12,8 @@
     require_once 'App/MyDialog.php';
 
     ?>
+
+<?php // FOR AJAX SELECT ALL FOTO FOR KATEGORY ?>
 <div id="mykat" class="container-fluid p-0 display-non">
-    <?php
-    // HEADER BACKGROUND
-    include  'App/HeaderImg.php';
-    // KATEGORY KONATINER
-    include 'App/KategoryCon.php';
-    ?>
+    <div id="body"></div>
 </div>

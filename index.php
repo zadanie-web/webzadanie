@@ -20,6 +20,10 @@ $routes = [
 
     '/bcheader' => [
         'POST' => 'App/HeaderImg.php',
+    ],
+
+    '/OneKat' => [
+        'POST' => 'App/KategoryCon.php',
     ]
 
 ];

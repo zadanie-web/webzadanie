@@ -4,7 +4,7 @@
     foreach($kategory as $kat):?>
     <?php  if (!$kat->image){ // If in new kategory no exist image ?>
     <div class="mt-4">
-        <div class="card tooglestart actions-btn" data-pol="<?= $kat->id;?>" data-divtoogle="mykat"  data-mytog-back="myblac">
+        <div class="card tooglestart actions-btn" data-pol="<?= $kat->id;?>" data-divtoogle="mykat"   data-mytog-back="myblac">
             <div class="card-body text-center">
                 <div class="text-warning mt-4 ml-4 mr-4 mb-1 bold">Teraz pridajte fotky pre túro kategóriu</div>
                 <img src="<?= packageFille('Media/a.svg');?>" width="40" alt="ikonka add" class="filter-green">
@@ -16,7 +16,7 @@
     // If in kategory exist image
         else {?>
     <div class="mt-4">
-        <div class="card tooglestart actions-btn" data-pol="<?= $kat->id;?>" data-action="bcheader" data-divtoogle="mykat" data-mytog-back="myblac">
+        <div class="card tooglestart actions-btn" data-pol="<?= $kat->id;?>" data-header="bcheader" data-act="Sel" data-true="true" data-action="OneKat" data-divtoogle="mykat" data-mytog-back="myblac">
             <img id="myidimg" class="card-img-top" src="<?= packageFille(plain($kat->image));?>" alt="Card image cap">
             <div class="card-body">
                 <p class="text-center bold  m-0 card-title"><?= plain($kat->name);?></p>

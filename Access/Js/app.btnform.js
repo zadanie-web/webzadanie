@@ -7,21 +7,23 @@ $(document).on('click','.actions-btn',function () {
     let header = $(this).attr('data-header');
     $.ajax({
         type: "POST",
-        url: actionf,
+        url: header,
         data: {action: posta, pol: ids},
         dataType: datatype,
         success: function (data) {
             $('#mykat').html(data);
+
             if (dattrue){
                 $.ajax({
-                    tape:"POST",
-                    url:header,
-                    data:{action: posta,pol:ids},
+                    method: "POST",
+                    url: actionf,
+                    data: {action: posta,pol:ids},
                     success: function (data){
-
+                        $('#body').html(data);
                     }
                 })
             }
+
         }
     })
 });
